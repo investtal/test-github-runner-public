@@ -1,0 +1,11 @@
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  hello:
+    runs-on: [self-hosted, investtal-runner]
+    steps:
+      - name: Say Hello
+        run: echo "Hello World from self-hosted runner!"
